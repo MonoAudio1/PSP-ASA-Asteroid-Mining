@@ -8,17 +8,17 @@ clear all; close all
 %--------------------------USER SETTINGS----------------------------------%
 
 %% Define Satellite Properties - YOU MUST UPDATE THESE VALUES
-Spacecraft.mass = 10; % Satellite mass [kg] %6U mass average 
+Spacecraft.mass = 12; % Satellite mass [kg] %6U mass average 
 Spacecraft.Aref = .3; % Satellite reference area [m^2]
 Spacecraft.Cd   = 0.2; % Satellite drag coefficient [unitless]
-Spacecraft.JDepoch   = 2460641.041184; % Satellite Julian date at epoch
-Spacecraft.position   = [-6856.526969  ;-150.495186  ;14.715389   ]; % Satellite initial ECI position [km]
-Spacecraft.velocity   = [0.030177 ;0.967984; 7.569638 ]; % Satellite initial ECI velocity [km/s]
+Spacecraft.JDepoch   = 2460701.030237 ; % Satellite Julian date at epoch
+Spacecraft.position   = [ -6825.313824  ;921.620925  ;7.471846   ]; % Satellite initial ECI position [km]
+Spacecraft.velocity   = [-0.716955 ;-5.332271; 5.378952 ]; % Satellite initial ECI velocity [km/s]
 
 %% Define Ground Station Properties - UPDATE THESE TOO
-Station.latitude = 39.236; %Ground station latitude [deg]
-Station.longitude = -86.305; %Ground station longitude [deg]
-Station.altitude = 0.280;  % Ground station altitude [km]
+Station.latitude = 42.060; %Ground station latitude [deg]
+Station.longitude = 76.200; %Ground station longitude [deg]
+Station.altitude = 370.000;  % Ground station altitude [km]
 Station.minElevation = 5; % Minimum elevation for acquisition [deg]
 Station.freq = 437e6; % Station frequency [Hz]
 
